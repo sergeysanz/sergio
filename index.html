@@ -1,417 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- =========================
+       META / SEO
+  ========================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>Sergio González — Web Design & Digital Experiences</title>
 
-  <!-- SEO -->
   <meta name="description" content="Web design, e-commerce and digital experiences focused on clarity, functionality and measurable results.">
   <meta name="author" content="Sergio González">
 
-  <!-- Fonts -->
+  <!-- =========================
+       FONTS
+  ========================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Libraries -->
+  <!-- =========================
+       LIBRARIES
+  ========================== -->
   <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- =========================
+       MAIN CSS
+  ========================== -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       HERO / INTRO
-  ========================== -->
-  <section class="start">
-    <div class="start__box">
+<!-- =====================================================
+     HERO / INTRO
+===================================================== -->
+<section class="start">
+  <div class="start__box">
 
-      <!-- Profile block -->
-      <div class="start__profile">
-        <div class="start__avatar">
-          <img
-            src="https://media.licdn.com/dms/image/v2/C5603AQEqz0tUjSqguQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1605322805490?e=1769644800&v=beta&t=jtKzbVIuAWecCbCHKxElZmp0LA4x2nVumeU6lwHWKW0"
-            alt="Sergio González profile photo"
-          >
-        </div>
-
-        <h1 class="start__heading">Sergio González</h1>
+    <div class="start__profile">
+      <div class="start__avatar">
+        <img
+          src="https://media.licdn.com/dms/image/v2/C5603AQEqz0tUjSqguQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1605322805490"
+          alt="Sergio González profile photo"
+        >
       </div>
-
-      <p class="start__text">
-        Web design, e-commerce and digital experiences focused on clarity,
-        functionality and measurable results.
-      </p>
-
-      <div class="scroll-marker">
-  <img src="assets/arrow.svg" alt="Scroll down">
-</div>
-
-
-    </div>
-  </section>
-
-  <!-- =========================
-       TEXT DROP / STATEMENT
-  ========================== -->
-  <section class="text-drop">
-
-    <!-- Images -->
-    <div class="text-drop__img-box has-prlx" data-speed="0.0001" data-opacity="1">
-      <img class="text-drop__img" src="https://bato-web-agency.github.io/bato-shared/img/text-drop/img1.png" alt="" loading="lazy">
+      <h1 class="start__heading">Sergio González</h1>
     </div>
 
-    <div class="text-drop__img-box has-prlx" data-speed="0.0001" data-opacity="0.75">
-      <img class="text-drop__img" src="https://bato-web-agency.github.io/bato-shared/img/text-drop/img2.png" alt="" loading="lazy">
+    <p class="start__text">
+      Web design, e-commerce and digital experiences focused on clarity,
+      functionality and measurable results.
+    </p>
+
+    <div class="scroll-marker">
+      <img src="./assets/arrow.svg" alt="Scroll down">
     </div>
 
-    <div class="text-drop__img-box has-prlx" data-speed="0.0001" data-opacity="1">
-      <img class="text-drop__img" src="https://bato-web-agency.github.io/bato-shared/img/text-drop/img3.png" alt="" loading="lazy">
-    </div>
+  </div>
+</section>
 
-    <div class="text-drop__img-box has-prlx" data-speed="0.0001" data-opacity="0.75">
-      <img class="text-drop__img" src="https://bato-web-agency.github.io/bato-shared/img/text-drop/img4.png" alt="" loading="lazy">
-    </div>
+<!-- =====================================================
+     TEXT DROP / MANIFESTO
+===================================================== -->
+<section class="text-drop">
 
-    <!-- Text -->
-    <div class="text-drop__line">Design is not</div>
-    <div class="text-drop__line">decoration.</div>
-    <div class="text-drop__line">It is structure,</div>
-    <div class="text-drop__line">clarity</div>
-    <div class="text-drop__line">and intention.</div>
-    <div class="text-drop__line">That’s my work.</div>
+  <div class="text-drop__img-box has-prlx" data-speed="0.0001" data-opacity="1">
+    <img src="https://bato-web-agency.github.io/bato-shared/img/text-drop/img1.png" loading="lazy">
+  </div>
 
-  </section>
+  <div class="text-drop__img-box has-prlx" data-speed="0.0001" data-opacity="0.75">
+    <img src="https://bato-web-agency.github.io/bato-shared/img/text-drop/img2.png" loading="lazy">
+  </div>
 
-  <!-- =========================
-       ABOUT / WAY OF THINKING
-  ========================== -->
-  <section class="text-animation">
-    <div class="text-animation__text">
+  <div class="text-drop__line">Design is not</div>
+  <div class="text-drop__line">decoration.</div>
+  <div class="text-drop__line">It is structure,</div>
+  <div class="text-drop__line">clarity</div>
+  <div class="text-drop__line">and intention.</div>
+  <div class="text-drop__line">That’s my work.</div>
 
-      I design digital experiences where
+</section>
 
-      <span class="text-animation__word">
-        <span class="text-animation__blur">
-          <span class="text-animation__image-wrapper">
-            <img class="text-animation__animated-img" src="img/strategy.jpg" alt="">
-            <span class="text-animation__reveal left"></span>
-            <span class="text-animation__reveal right"></span>
-          </span>
-        </span>
-        <span>strategy</span>
-      </span>
+<!-- =====================================================
+     TOOLS / STACK
+===================================================== -->
+<section class="base-template tools">
+  <div class="wrapper base-template__wrapper">
 
-      meets
+    <h2 class="base-template__title">Tools & Platforms</h2>
+    <p class="base-template__text">
+      Technologies and platforms I use to design, build and optimize digital products.
+    </p>
 
-      <span class="text-animation__word">
-        <span class="text-animation__blur">
-          <span class="text-animation__image-wrapper">
-            <img class="text-animation__animated-img" src="img/design.jpg" alt="">
-            <span class="text-animation__reveal left"></span>
-            <span class="text-animation__reveal right"></span>
-          </span>
-        </span>
-        <span>design</span>
-      </span>
+    <div class="tools-ticker">
+      <div class="tools-ticker__track">
 
-      and technology becomes a tool,
-
-      <span class="text-animation__word">
-        <span class="text-animation__blur">
-          <span class="text-animation__image-wrapper">
-            <img class="text-animation__animated-img" src="img/impact.jpg" alt="">
-            <span class="text-animation__reveal left"></span>
-            <span class="text-animation__reveal right"></span>
-          </span>
-        </span>
-        <span>not noise</span>
-      </span>.
-
-      <br><br>
-
-      I work with brands, projects and organizations
-      that need clarity, functionality and measurable results.
-      <br><br>
-
-      My focus is not trends, but systems that work over time.
-
-    </div>
-  </section>
-
-
-
-  <!-- =========================
-       TOOLS / STACK
-  ========================== -->
-  <section class="base-template tools">
-    <div class="wrapper base-template__wrapper">
-
-      <h2 class="base-template__title">Tools & Platforms</h2>
-      <p class="base-template__text">
-        Technologies and platforms I use to design, build and optimize digital products.
-      </p>
-
-      <!-- Ticker -->
-      <div class="tools-ticker">
-        <div class="tools-ticker__track">
-
-          <!-- GROUP 1 -->
-          <div class="tools-ticker__group">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Wordpress-Logo.svg" alt="WordPress">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/shopify.svg" alt="">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" alt="Tailwind">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/greensock.svg" alt="GSAP">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg" alt="Vercel">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/netlify.svg" alt="Netlify">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg" alt="OpenAI">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/meta.svg" alt="Meta">
-          </div>
-
-          <!-- GROUP 2 (duplicate) -->
-          <div class="tools-ticker__group">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Wordpress-Logo.svg" alt="">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/shopify.svg" alt="">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" alt="Tailwind">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/greensock.svg" alt="">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg" alt="">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/netlify.svg" alt="">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg" alt="">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/meta.svg" alt="">
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-    <!-- =========================
-         PORTFOLIO
-    ========================== -->
-
-    <!-- =========================
-         PORTFOLIO
-    ========================== -->
-
-    <section class="base-template">
-      <div class="wrapper base-template__wrapper">
-
-        <h1 class="base-template__title">
-          Brands Built With Purpose
-        </h1>
-
-        <div class="base-template__text">
-          Selected projects where strategy, design and technology come together to build meaningful brands, scalable products and conversion-driven experiences.
+        <div class="tools-ticker__group">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Wordpress-Logo.svg" alt="WordPress">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/shopify.svg" alt="Shopify">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" alt="Tailwind">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/greensock.svg" alt="GSAP">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg" alt="Vercel">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/netlify.svg" alt="Netlify">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg" alt="OpenAI">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/meta.svg" alt="Meta">
         </div>
 
-        <div class="base-template__content">
-          <div class="lazy-images">
-
-            <!-- =========================
-                 HERO / FEATURED BRANDS
-            ========================== -->
-
-            <div class="lazy-images__section">
-              <div class="lazy-images__grid brand-grid">
-
-                <!-- Bendita Selva -->
-                <a
-                  href="https://benditaselva.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="lazy-images__item brand-card brand-bendita"
-                >
-                  <div class="brand-frame">
-                    <img
-                      data-lazy="pixel"
-                      data-src="assets/bendita/logo.png"
-                      data-pixel="assets/bendita/logo.png"
-                      alt="Bendita Selva logo"
-                    />
-                  </div>
-                  <div class="lazy-images__tag">
-                    Bendita Selva · Underwear Brand
-                  </div>
-                </a>
-
-                <!-- Cleo Esencial -->
-                <a
-                  href="https://cleoesencial.ca"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="lazy-images__item brand-card brand-cleo"
-                >
-                  <div class="brand-frame">
-                    <img
-                      data-lazy="fade"
-                      data-src="assets/cleo/logo.png"
-                      alt="Cleo Esencial logo"
-                    />
-                  </div>
-                  <div class="lazy-images__tag">
-                    Cleo Esencial · Natural Care
-                  </div>
-                </a>
-
-                <!-- Connect & Close -->
-                <a
-                  href="https://connectandclose.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="lazy-images__item brand-card brand-connect"
-                >
-                  <div class="brand-frame">
-                    <img
-                      data-lazy="loader"
-                      data-src="assets/connect/logo.png"
-                      alt="Connect & Close logo"
-                    />
-                  </div>
-                  <div class="lazy-images__tag">
-                    Connect & Close · Sales Systems
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="lazy-images__trigger">
-                <span>Explore the Work</span>
-              </div>
-            </div>
-
-
-            <!-- =========================
-                 BENDITA SELVA
-            ========================== -->
-            <div class="lazy-images__section">
-              <h2 class="lazy-images__title">
-                <mark>01</mark><span>Bendita Selva</span>
-              </h2>
-
-              <div class="lazy-images__grid tiles">
-                <div class="lazy-images__item">
-                  <img data-lazy="pixel" data-src="assets/bendita/01.png">
-                </div>
-                <div class="lazy-images__item">
-                  <img data-lazy="pixel" data-src="assets/bendita/02.png">
-                </div>
-                <div class="lazy-images__item">
-                  <img data-lazy="pixel" data-src="assets/bendita/03.png">
-                </div>
-              </div>
-            </div>
-
-            <!-- =========================
-                 CLEO ESENCIAL
-            ========================== -->
-            <div class="lazy-images__section">
-              <h2 class="lazy-images__title">
-                <mark>02</mark><span>Cleo Esencial</span>
-              </h2>
-
-              <div class="lazy-images__grid tiles">
-                <div class="lazy-images__item">
-                  <img data-lazy="fade" data-src="assets/cleo/01.png">
-                </div>
-                <div class="lazy-images__item">
-                  <img data-lazy="fade" data-src="assets/cleo/02.png">
-                </div>
-                <div class="lazy-images__item">
-                  <img data-lazy="fade" data-src="assets/cleo/03.png">
-                </div>
-              </div>
-            </div>
-
-            <!-- =========================
-                 CONNECT & CLOSE
-            ========================== -->
-            <div class="lazy-images__section">
-              <h2 class="lazy-images__title">
-                <mark>03</mark><span>Connect & Close</span>
-              </h2>
-
-              <div class="lazy-images__grid tiles">
-                <div class="lazy-images__item">
-                  <img data-lazy="" data-src="assets/connect/01.png" data-loader="assets/loader.svg">
-                </div>
-                <div class="lazy-images__item">
-                  <img data-lazy="" data-src="assets/connect/02.png" data-loader="assets/loader.svg">
-                </div>
-                <div class="lazy-images__item">
-                  <img data-lazy="" data-src="assets/connect/03.png" data-loader="assets/loader.svg">
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <div class="tools-ticker__group">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Wordpress-Logo.svg">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/shopify.svg">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/greensock.svg">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/netlify.svg">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/meta.svg">
         </div>
 
       </div>
-    </section>
-
-
-
-
-
-
-
-  <!-- =========================
-       CLOSING / MANIFESTO
-  ========================== -->
-  <section class="final">
-    <div class="final__bottom-text">
-      Design should feel natural,
-      work silently
-      and support real goals.
-      <br><br>
-      That’s how I approach every project.
     </div>
-  </section>
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer class="footer">
-    <div class="footer__content">
-      <p>© 2026 Sergio González</p>
-      <a href="https://www.linkedin.com/in/sergio-gonzalez-almagua/" target="_blank" rel="noopener">
-        LinkedIn
+  </div>
+</section>
+
+<!-- =====================================================
+     PORTFOLIO
+===================================================== -->
+<section class="base-template">
+  <div class="wrapper base-template__wrapper">
+
+    <h2 class="base-template__title">Brands Built With Purpose</h2>
+    <p class="base-template__text">
+      Selected projects where strategy, design and technology come together.
+    </p>
+
+    <!-- FEATURED BRANDS -->
+    <div class="lazy-images__grid brand-grid">
+
+      <a href="https://benditaselva.com" target="_blank" class="brand-card">
+        <img src="./assets/bendita/logo.png" alt="Bendita Selva">
+        <span>Bendita Selva · Underwear Brand</span>
       </a>
+
+      <a href="https://cleoesencial.ca" target="_blank" class="brand-card">
+        <img src="./assets/cleo/logo.png" alt="Cleo Esencial">
+        <span>Cleo Esencial · Natural Care</span>
+      </a>
+
+      <a href="https://connectandclose.io" target="_blank" class="brand-card">
+        <img src="./assets/connect/logo.png" alt="Connect & Close">
+        <span>Connect & Close · Sales Systems</span>
+      </a>
+
     </div>
-  </footer>
 
-  <!-- =========================
-       JS
-  ========================== -->
+  </div>
+</section>
 
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="footer">
+  <div class="footer__content">
+    <p>© 2026 Sergio González</p>
+    <a href="https://www.linkedin.com/in/sergio-gonzalez-almagua/" target="_blank">LinkedIn</a>
+  </div>
+</footer>
 
-  <script>
-    const ticker = document.querySelector(".tools-ticker__track");
+<!-- =====================================================
+     JS
+===================================================== -->
+<script>
+  gsap.to(".tools-ticker__track", {
+    xPercent: -50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".tools",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1
+    }
+  });
+</script>
 
-    gsap.to(ticker, {
-      xPercent: -50,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".tools",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1
-      }
-    });
-  </script>
-
-
-
-  <script src="js/main.js"></script>
-  <script src="lazy-images.js"></script>
+<script src="./js/main.js"></script>
+<script src="./lazy-images.js"></script>
 
 </body>
 </html>
