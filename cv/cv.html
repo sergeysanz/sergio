@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sergio González — CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =========================
+       BASIC RESET
+  ========================= -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+      background: #0b0b0b;
+      color: #cfcfcf;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      color: #ffffff;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+
+  <!-- =========================
+       MAIN LAYOUT
+  ========================= -->
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 5vw, 4.5rem);
+      max-width: 800px;
+    }
+
+    .hero p {
+      max-width: 640px;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    .meta {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    .cv-open-btn {
+      margin-top: 48px;
+      align-self: flex-start;
+      padding: 14px 36px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    .cv-open-btn:hover {
+      background: rgba(255,255,255,0.15);
+      transform: translateY(-2px);
+    }
+  </style>
+
+  <!-- =========================
+       CV MODAL
+  ========================= -->
+  <style>
+    .cv-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      display: none;
+    }
+
+    .cv-modal.active {
+      display: block;
+    }
+
+    .cv-modal__overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(10px);
+    }
+
+    .cv-modal__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(960px, 92%);
+      height: 88vh;
+      background: rgba(15,15,15,0.9);
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.1);
+      overflow: hidden;
+    }
+
+    .cv-modal__inner {
+      height: 100%;
+      overflow-y: auto;
+      padding: 72px;
+    }
+
+    .cv-modal__close {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    .cv-modal__close:hover {
+      opacity: 1;
+    }
+
+    .cv-modal__contact {
+      margin: 16px 0 48px;
+      font-size: 0.95rem;
+      opacity: 0.75;
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    section h3 {
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    article {
+      margin-bottom: 32px;
+    }
+
+    article h4 {
+      font-size: 1.05rem;
+    }
+
+    article span {
+      display: block;
+      font-size: 0.85rem;
+      opacity: 0.6;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HERO / SUMMARY
+  ========================= -->
+  <div class="container">
+    <section class="hero">
+      <h1>Sergio González</h1>
+
+      <p>
+        Advertising & Marketing professional with experience in web design,
+        digital projects and long-term brand development. Focused on clarity,
+        structure and practical solutions that support real business needs.
+      </p>
+
+      <div class="meta">
+        <span>Publicist & Web Designer</span>
+        <span>Manizales, Colombia</span>
+        <span>Remote / International</span>
+      </div>
+
+      <button class="cv-open-btn" id="openCv">
+        View full CV
+      </button>
+    </section>
+  </div>
+
+  <!-- =========================
+       CV MODAL CONTENT
+  ========================= -->
+  <div class="cv-modal" id="cvModal">
+    <div class="cv-modal__overlay"></div>
+
+    <div class="cv-modal__content">
+      <button class="cv-modal__close">✕</button>
+
+      <div class="cv-modal__inner">
+
+  <h2>Sergio González</h2>
+  <p class="cv-modal__contact">
+    Publicist · Web Designer<br>
+    Manizales, Caldas — Colombia<br>
+    +57 324 599 5108 · sergiogonzawr@gmail.com<br>
+    Available for relocation · Remote & International
+  </p>
+
+  <section>
+    <h3>Professional Summary</h3>
+    <p>
+      Professional in Advertising and Marketing with experience in web design and
+      digital projects, developed in both agency and freelance environments.
+      I am used to working with different teams, workflows and expectations.
+    </p>
+    <p>
+      I approach my work with a strong sense of responsibility, organization and
+      respect for deadlines. I value clear communication and practical solutions
+      that support real business needs.
+    </p>
+    <p>
+      I work with attention to detail, consistency and long‑term thinking.
+      I am comfortable working remotely, collaborating with international teams
+      and contributing in a reliable and steady way to ongoing projects.
+    </p>
+  </section>
+
+  <section>
+    <h3>Personal Information</h3>
+    <ul>
+      <li><strong>Date of birth:</strong> 25/09/1989</li>
+      <li><strong>Driving license:</strong> Cars</li>
+      <li><strong>Highest education level:</strong> Bachelor’s degree completed</li>
+      <li><strong>Industry:</strong> Marketing</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Professional Experience</h3>
+
+    <article>
+      <h4>Publicist — Fundación Almagua</h4>
+      <span>April 2019 – January 2026 · Cali, Colombia</span>
+      <p>
+        Supported communication and promotional activities for cultural and fashion
+        events. Planned and assisted promotional actions for both digital and
+        in‑person events, including participation in fashion fairs and runways
+        such as Cali Distrito Moda.
+      </p>
+      <p>
+        Collaborated on booth design, on‑site communication materials, QR code
+        experiences and simple augmented reality elements to enhance visitor
+        interaction and product promotion.
+      </p>
+      <p>
+        Contributed to website updates and basic digital positioning efforts from
+        a visual and communication perspective.
+      </p>
+    </article>
+
+    <article>
+      <h4>Marketing Manager — Connect & Close</h4>
+      <span>February 2022 – January 2026 · LATAM / USA</span>
+      <p>
+        Planning and coordination of digital marketing efforts focused on lead
+        generation and customer acquisition for projects in the United States
+        and Latin America.
+      </p>
+      <p>
+        Supported lead marketing processes, reviewed campaign performance and
+        implemented practical adjustments based on results, including audience
+        segmentation and basic funnel analysis.
+      </p>
+      <p>
+        Worked closely with sales and content teams to keep marketing actions
+        aligned with business priorities and day‑to‑day needs.
+      </p>
+    </article>
+
+    <article>
+      <h4>Web Designer — Connect & Close</h4>
+      <span>February 2022 – January 2026</span>
+      <p>
+        Design and development of clear, functional websites aligned with
+        marketing and business objectives. Focused on structure, usability
+        and long‑term platform stability.
+      </p>
+      <p>
+        Supported eCommerce projects, tracking setups and conversion measurement,
+        working closely with marketing and sales teams to ensure alignment with
+        active campaigns.
+      </p>
+      <p>
+        Responsible for ongoing maintenance, performance optimization,
+        responsiveness and technical reliability.
+      </p>
+    </article>
+
+    <article>
+      <h4>Web Designer — Cleo Esencial</h4>
+      <span>January 2024 – October 2025 · Ottawa, Canada</span>
+      <p>
+        Design and development of an eCommerce website for a natural‑based beauty
+        brand focused on the Canadian market.
+      </p>
+      <p>
+        Worked on store structure, usability and a clear shopping experience
+        adapted to local expectations, with attention to performance and
+        loading speed.
+      </p>
+      <p>
+        Created graphic assets including banners, visual elements and image
+        editing, maintaining visual balance and consistency across the platform.
+      </p>
+      <p>
+        Supported basic SEO, digital marketing actions and brand positioning
+        during local events and small business fairs.
+      </p>
+    </article>
+
+    <article>
+      <h4>Web Designer — Bendita Selva</h4>
+      <span>March 2021 – September 2025 · Manizales, Colombia</span>
+      <p>
+        Development and management of the brand’s digital presence and eCommerce
+        platform for a women’s underwear brand.
+      </p>
+      <p>
+        Complete website and online store design, basic SEO and digital marketing
+        actions, including Meta tracking pixel integration for conversion‑based
+        campaign funnels.
+      </p>
+      <p>
+        Coordinated influencer marketing activities, photo sessions, production
+        logistics and moodboards to guide visual direction.
+      </p>
+      <p>
+        Designed digital banners, Instagram content and visual materials for
+        promotional events and fairs across different cities in Colombia.
+      </p>
+    </article>
+
+    <article>
+      <h4>Web Designer — Neotropical Ornithological Society</h4>
+      <span>January 2023 – November 2024 · International</span>
+      <p>
+        Design and development of a scientific and educational website supporting
+        research, publications and institutional communication related to
+        Neotropical avian studies.
+      </p>
+      <p>
+        Focused on clear structure, accessibility and long‑term usability for
+        researchers, students and conservation professionals.
+      </p>
+    </article>
+
+  </section>
+
+  <section>
+    <h3>Education</h3>
+    <p>
+      Bachelor in Advertising and Marketing<br>
+      Universidad Católica de Manizales — Colombia<br>
+      2012 – 2018
+    </p>
+  </section>
+
+</div>
+
+
+  <!-- =========================
+       JS INTERACTION
+  ========================= -->
+  <script>
+    const openCv = document.getElementById("openCv");
+    const cvModal = document.getElementById("cvModal");
+    const closeCv = document.querySelector(".cv-modal__close");
+    const overlay = document.querySelector(".cv-modal__overlay");
+
+    openCv.addEventListener("click", () => {
+      cvModal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+
+    [closeCv, overlay].forEach(el => {
+      el.addEventListener("click", () => {
+        cvModal.classList.remove("active");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+
+</body>
+</html>
