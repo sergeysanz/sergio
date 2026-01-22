@@ -788,3 +788,49 @@ body {
 .brand-card:hover .lazy-images__tag {
   opacity: 0.95;
 }
+
+
+
+
+/* =========================
+   CV BUTTON – CLEAN DESIGN
+========================= */
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 32px;
+  padding: 12px 26px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: #000;
+  text-decoration: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 999px;
+
+  background: transparent;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.btn-cv:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Quita azul horrible del navegador */
+.btn-cv:focus,
+.btn-cv:active,
+.btn-cv:visited {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
